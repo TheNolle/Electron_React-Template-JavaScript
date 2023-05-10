@@ -18,7 +18,7 @@ export default function App() {
                 <Route path="a" element={<h1>A</h1>} />
                 <Route path="*" element={<h1>An error occurred</h1>} />
             </Routes>
-            <div style="display:flex;flex-gap:1rem">
+            <div style={{ display: 'flex', columnGap: '1rem' }}>
                 <Link to="/">Home</Link>
                 <Link to="a">A</Link>
                 <Link to="/404">404</Link>
