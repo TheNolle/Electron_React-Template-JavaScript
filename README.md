@@ -28,7 +28,7 @@
 
 
 ## Configuration
-The only configuration files you may need to customize are the `package.json` file for the app name, and the `public/index.html` file for the display name.
+The only configuration files you may need to customize are the `package.json` file for the app name and app id, and the `public/index.html` file for the display name.
 
 
 ## Development Process

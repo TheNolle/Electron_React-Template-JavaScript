@@ -9,8 +9,8 @@
     "package": "pnpm build && electron-builder"
   },
   "build": {
-    "appId": "com.thenolle.app.nopack",
-    "productName": "NoPack",
+    "appId": "com.thenolle.app.electron-x-react",
+    "productName": "electron-x-react",
     "directories": {
       "buildResources": "assets"
     },
