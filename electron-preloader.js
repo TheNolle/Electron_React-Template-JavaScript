@@ -6,6 +6,6 @@ contextBridge.exposeInMainWorld('versions', {
     electron: () => process.versions.electron,
 })
 
-contextBridge.exposeInMainWorld('electron', {
-    consoleLog: (message) => ipcRenderer.send('console-log', message),
+contextBridge.exposeInMainWorld('shell', {
+    openExternal: (url) => ipcRenderer.send('open-external', url),
 })
