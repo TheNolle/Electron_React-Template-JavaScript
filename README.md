@@ -2,6 +2,9 @@
 
 **Electron x React** is an Electron-based app template that allows you to create desktop applications using ReactJS for the frontend, SCSS or CSS, and Node.js. This template enables you to develop without relying on Create-React-App and provides a simple way to build and package your application for multiple platforms.
 
+### Preview
+![Preview](preview.png)
+
 
 ## Features
 * ReactJS integration for frontend development
