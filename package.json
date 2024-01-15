@@ -1,7 +1,14 @@
 {
-  "name": "electron-x-react",
-  "version": "0.0.1",
+  "author": "Nolly <https://thenolle.com>",
+  "name": "electron_react-template-javascript",
+  "version": "1.0.0",
   "main": "electron-main.js",
+  "description": "Electron-based app template that allows you to create a desktop app using React as a frontend. This template enables you to develop without relying on Create-React-App and provides a simple way to build and package your application for multiple platforms.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheNolle/Electron_React-Template-JavaScript"
+  },
   "scripts": {
     "start": "pnpm build && electron .",
     "dev": "cross-env NODE_ENV=development concurrently --kill-others-on-fail \"webpack serve --config webpack.config.js --mode development --no-cache --port 1245\" \"wait-on http://localhost:1245 && electron .\"",
@@ -9,25 +16,10 @@
     "package": "pnpm build && electron-builder",
     "update": "pnpm install && pnpm update"
   },
-  "build": {
-    "appId": "com.thenolle.app.electron-x-react",
-    "productName": "electron-x-react",
-    "directories": {
-      "buildResources": "dist"
-    },
-    "files": [
-      "dist/",
-      "electron-main.js"
-    ],
-    "mac": {
-      "target": "dmg"
-    },
-    "win": {
-      "target": "nsis"
-    },
-    "linux": {
-      "target": "AppImage"
-    }
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2"
   },
   "devDependencies": {
     "@babel/core": "^7.22.1",
@@ -49,9 +41,24 @@
     "webpack-cli": "^5.1.1",
     "webpack-dev-server": "^4.15.0"
   },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.2"
+  "build": {
+    "appId": "com.thenolle.app.electron-x-react",
+    "productName": "electron-x-react",
+    "directories": {
+      "buildResources": "dist"
+    },
+    "files": [
+      "dist/",
+      "electron-main.js"
+    ],
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
   }
 }
